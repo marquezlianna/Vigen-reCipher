@@ -39,6 +39,6 @@ if __name__ == "__main__":
     cipher_text = cipherText(string, key)
     print("Cipher Text : ", cipher_text)
     print("Plain Text : ", originalText(cipher_text, key))
+# change font to "doh"
     result = pyfiglet.figlet_format(cipher_text, font="doh")
     print(result)
-    
