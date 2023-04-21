@@ -29,3 +29,16 @@ def originalText(cipher_text, key):
         orig_text.append(chr(x))
     return ("".join(orig_text))
 
+# print output
+if __name__ == "__main__":
+    string = input("What is the message? ")
+    output_str = ""
+    keyword = input("What is the keyword? ")
+    output_str = ""
+    key = generateKey(string, keyword)
+    cipher_text = cipherText(string, key)
+    print("Cipher Text : ", cipher_text)
+    print("Plain Text : ", originalText(cipher_text, key))
+    result = pyfiglet.figlet_format(cipher_text, font="doh")
+    print(result)
+    
